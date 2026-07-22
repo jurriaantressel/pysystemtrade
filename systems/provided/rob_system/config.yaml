@@ -399,17 +399,6 @@ risk_overlay:
   max_risk_fraction_stdev_risk: 4.0
   max_risk_limit_sum_abs_risk: 4.0
   max_risk_leverage: 20.0
-# Duplicate-market exclusions (Carver report 2026-07-21): each instrument's
-# underlying exposure is already represented by another in the universe.
-# Keeping both would double-count risk in portfolio optimisation.
-duplicate_instruments:
-  exclude:
-    carver_2026:
-      - EPRA-EUROPE       # duplicate of EU-REALESTATE
-      - EUROSTX-LARGE     # duplicate of EUROSTX
-      - EUROSTX200-LARGE  # duplicate of EURO600
-      - GAS-LAST          # duplicate of GAS_US_mini
-      - TOPIX             # duplicate of NIKKEI400
 instrument_weights:
   AEX: 0.00673
   ALUMINIUM: 0.0114
